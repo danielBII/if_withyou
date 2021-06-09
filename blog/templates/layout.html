@@ -4,145 +4,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="templates/style.css" type="text/css">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Blog Template for Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/blog/">
-
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> >
+
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <style type ="text/css"> 
-    / * stylelint-disable selector-list-comma-newline-after * /
 
-        .blog-header {
-        altura da linha: 1;
-        borda inferior: 1px sólido # e5e5e5;
-        }
-
-        .blog-header-logo {
-        família de fontes: "Playfair Display", Geórgia, "Times New Roman", serifa;
-        tamanho da fonte: 2,25 rem;
-        }
-
-        .blog-header-logo: hover {
-        decoração de texto: nenhum;
-        }   
-
-        h1, h2, h3, h4, h5, h6 {
-        família de fontes: "Playfair Display", Geórgia, "Times New Roman", serifa;
-        }
-
-        .display-4 {
-        tamanho da fonte: 2,5 rem;
-        }
-        @media (largura mínima: 768px) {
-        .display-4 {
-            tamanho da fonte: 3rem;
-        }
-        }
-
-        .nav-scroller {
-        posição: relativa;
-        índice z: 2;
-        altura: 2,75 rem;
-        overflow-y: oculto;
-        }
-
-        .nav-scroller .nav {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        acolchoamento inferior: 1rem;
-        margin-top: -1px;
-        overflow-x: automático;
-        alinhamento de texto: centro;
-        espaço em branco: nowrap;
-        -webkit-overflow-scrolling: touch;
-        }
-
-        .nav-scroller .nav-link {
-        acolchoamento superior: .75rem;
-        acolchoamento inferior: .75rem;
-        tamanho da fonte: .875rem;
-        }
-
-        .card-img-right {
-        altura: 100%;
-        border-radius: 0 3px 3px 0;
-        }
-
-        .flex-auto {
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-        }
-
-        .h-250 {altura: 250px; }
-        @media (largura mínima: 768px) {
-        .h-md-250 {altura: 250px; }
-        }
-
-        / *
-        * Nome e descrição do blog
-        * /
-        .Título do Blog {
-        margem inferior: 0;
-        tamanho da fonte: 2rem;
-        peso da fonte: 400;
-        }
-        .blog-description {
-        tamanho da fonte: 1.1rem;
-        cor: # 999;
-        }
-
-        @media (largura mínima: 40em) {
-        .Título do Blog {
-            tamanho da fonte: 3,5 rem;
-        }
-        }
-
-        / * Paginação * /
-        .blog-pagination {
-        margem inferior: 4rem;
-        }
-        .blog-paginação> .btn {
-        raio da borda: 2rem;
-        }
-
-        / *
-        * Postagens no blog
-        * /
-        .blog-post {
-        margem inferior: 4rem;
-        }
-        .blog-post-title {
-        margin-bottom: .25rem;
-        tamanho da fonte: 2,5 rem;
-        }
-        .blog-post-meta {
-        margem inferior: 1,25 rem;
-        cor: # 999;
-        }
-
-        / *
-        * Rodapé
-        * /
-        .blog-footer {
-        preenchimento: 2,5 rem 0;
-        cor: # 999;
-        alinhamento de texto: centro;
-        cor de fundo: # f9f9f9;
-        borda superior: 0,05rem sólido # e5e5e5;
-        }
-        .blog-footer p: last-child {
-        margem inferior: 0;
-        }       
-    
-    </style>
   </head>
 
   <body>
@@ -181,13 +53,13 @@
           <a class="p-2 text-muted" href="#">Travel</a>
         </nav>
       </div>
-      {% block sub_header %}{% endblock %}
+      {% block sub_header %} {% endblock %}
     </div>
 
     <main role="main" class="container">
       <div class="row">
         <div class="col-md-8 blog-main">
-          {% block content %}{% endblock %}
+            {% block content %}{% endblock %}
         </div><!-- /.blog-main -->
 
         <aside class="col-md-4 blog-sidebar">
@@ -234,21 +106,5 @@
         <a href="#">Back to top</a>
       </p>
     </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
   </body>
 </html>
